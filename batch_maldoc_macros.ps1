@@ -25,7 +25,7 @@ Write-Host "Creating directory for extracted VB macros...";
 New-Item -Path $dir'\extracted_vbs' -ItemType Directory -ErrorAction SilentlyContinue -ErrorVariable $DirError;
 If ($DirError) { Write-Warning -Message "[WARNING] Directory create error... Directory likely exists or permissions error"; }
 
-Write-Host "'nRunning against '$extension' files...";
+Write-Host "`nRunning against '$extension' files...";
 
 Get-ChildItem $dir -Filter "*.$extension" | #get files
 ForEach-Object{
