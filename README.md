@@ -1,4 +1,4 @@
-BATCH VBA MACRO EXTRACTOR
+## BATCH VBA MACRO EXTRACTOR
 
 This script requires the installation of oletools: https://github.com/decalage2/oletools
 
