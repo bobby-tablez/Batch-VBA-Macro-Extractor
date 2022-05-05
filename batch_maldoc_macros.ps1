@@ -32,7 +32,7 @@ ForEach-Object{
     Try {
         $fileName = $_.Name;
         Write-Progress "Extracting VB macros from $fileName";
-        olevba.exe -c $dir"\"$fileName >> $dir"\extracted_vbs\"$fileName".vbs" 2>&1;
+        olevba.exe -c $dir"\"$fileName >> $dir"\extracted_vbs\"$fileName".vbs.txt" 2>&1;
     }
     Catch { Write-Warning "[WARNING] Possible error in $fileName"; }  
 }
