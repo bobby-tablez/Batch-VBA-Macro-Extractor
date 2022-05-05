@@ -3,7 +3,7 @@ Write-Host "BATCH VB MACRO EXTRACTOR`nRequires oletools to be installed:`nGet it
 Write-Host "========================================================`n`n"
 
 
-$dir = Read-Host -Prompt "Enter maldoc directory (no trailing slash)";
+$dir = Read-Host -Prompt "Enter document directory (no trailing slash)";
 Write-Host "Directory set to '$dir'";
 
 $confirmExt = Read-Host -Prompt "Do we need to append extensions? [y/n]";
